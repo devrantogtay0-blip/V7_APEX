@@ -1,0 +1,83 @@
+# ═══════════════════════════════════════════════════════════
+# 🐋 V7 APEX — Git Ignore
+# ═══════════════════════════════════════════════════════════
+
+# ─── SANAL ORTAM ─────────────────────────────────────────
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ─── PYTHON CACHE ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── VERİTABANI ──────────────────────────────────────────
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.sqlite-journal
+*.db
+
+# ─── CACHE / MODEL ───────────────────────────────────────
+cache_v7/
+*.pkl
+*.npz
+*.pt
+*.pth
+*.onnx
+*.h5
+*.joblib
+
+# ─── LOG / METRİK ────────────────────────────────────────
+*.log
+v7_structured.jsonl
+v7_metrics.prom
+metrics_*.prom
+seekdeep.log
+
+# ─── ENV / SECRET ────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+secrets.toml
+.streamlit/secrets.toml
+
+# ─── IDE / EDİTÖR ────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# ─── TEST ────────────────────────────────────────────────
+tmp_*
+pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ─── JUPYTER ─────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ─── STATE ───────────────────────────────────────────────
+v7_*.pkl
+v7_*.npz
+seekdeep7_*
+state.json
+state_v25.pkl
+bot.pkl
+bot_v25.db

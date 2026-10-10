@@ -1,0 +1,52 @@
+# ═══════════════════════════════════════════════════════════
+# 🐋 V7 APEX — Requirements (TAM SÜRÜM)
+# ═══════════════════════════════════════════════════════════
+
+# ─── ÇEKİRDEK (ZORUNLU) ───────────────────────────────────
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+
+# ─── HIZLANDIRMA (Numba JIT) ──────────────────────────────
+numba>=0.57
+
+# ─── VERİ KAYNAKLARI ──────────────────────────────────────
+yfinance>=0.2
+requests>=2.31
+
+# ─── VERİTABANI ───────────────────────────────────────────
+duckdb>=0.9
+
+# ─── ARAYÜZ ───────────────────────────────────────────────
+streamlit>=1.30
+plotly>=5.18
+streamlit-autorefresh>=1.0
+
+# ─── DERİN ÖĞRENME (OPSİYONEL) ────────────────────────────
+# Torch yoksa: numpy fallback kullanılır
+# Kurmak için: pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+transformers>=4.35
+chronos-forecasting>=1.0
+
+# ─── RL (OPSİYONEL) ───────────────────────────────────────
+# Kurulu değilse RL veto devre dışı kalır
+stable-baselines3>=2.2
+gymnasium>=0.29
+
+# ─── NLP (OPSİYONEL) ──────────────────────────────────────
+# Groq: ücretsiz API tier
+groq>=0.4
+
+# ─── MONITORING (OPSİYONEL) ───────────────────────────────
+prometheus-client>=0.19
+psutil>=5.9
+
+# ─── CAUSAL (OPSİYONEL) ───────────────────────────────────
+# dowhy>=0.10
+# causallearn>=0.1
+
+# ─── XAI (OPSİYONEL) ──────────────────────────────────────
+# shap>=0.44
+# lime>=0.2
+# captum>=0.7
